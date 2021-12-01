@@ -1,0 +1,273 @@
+h1 {
+  font-family: 'Merriweather', Merriweather, monospace;
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+p1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+.p2 {
+  font-family: 'Merriweather', Merriweather, monospace;
+  font-size: 24px;
+}
+
+img {
+width: 80%; height: 20%; align-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 150px;
+  display: table;
+  margin: 0 auto;
+}
+
+li a {
+display: block;
+color: black;
+padding: 5px 10px;
+text-decoration: none;
+text-align: center;
+}
+
+li a:hover {
+  color: white;
+}
+
+li b {
+color: black;
+text-decoration: none;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+ul.a {
+  list-style-type: disc;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+}
+li.a a{
+color: black;
+text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+  }
+
+  .middle {
+    grid-area: middle;
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+.wrapper {
+  background-color: #443850;
+  color: #fff;
+}
+
+  .wrapper {
+    display: grid;
+    
+    grid-template-areas:
+     'logo header header header'
+     'nav middle middle middle'
+     'nav footer footer footer';
+    padding: 10px;
+  }
+  @media screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    
+    grid-template-areas:
+     'logo header header'
+     'nav nav nav'
+     'middle middle middle'
+     'footer footer footer';
+    padding: 10px;
+  }
+  }
+
+.box {
+  background-color: #443850;
+  color: white;
+  border-radius: 0px;
+  padding: 10px;
+  font-size: 150%; 
+}
+
+.header{
+  background-color: #d62839ff;
+  color: white;
+}
+.footer {
+  background-color: #cce6f4ff;
+  color: black;
+}
+
+.middle {
+  background-color: #4ba3c3ff;
+  color: black;
+}
+
+.logo {
+  background-color: white;
+  color: black;
+}
+
+.nav {
+  background-color: #ba324fff;
+  color: white;
+}
+
+.diamond {
+      width: 0;
+      height: 0;
+      border: 70px solid transparent;
+      position: relative;
+      top: -70px;
+      border-bottom-color: #175676ff;
+    }
+    .diamond:after {
+      content: '';
+      position: absolute;
+      left: -70px;
+      top: 70px;
+      width: 0;
+      height: 0;
+      border: 70px solid transparent;
+      border-top-color: #175676ff;
+    }
+.centered {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hiddenCard {
+  display: none;
+}
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+* {box-sizing:border-box}
+
+/* Carousel container */
+.carousel-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.myCarousel {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -38px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

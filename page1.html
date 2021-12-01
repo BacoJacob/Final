@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@3.1.0/dist/umd/index.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="getCard()">
+    <div class="wrapper">
+    <div class="box logo">
+      <div class="diamond centered"></div>
+    </div>
+    <header class="box header">
+    <h1>Blue Box</h1>
+    </header>
+    <nav class="box nav">
+      <br>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">Card List</a></li>
+        <li><a href="page2.html">Add Card</a></li>
+      </ul>
+    </nav>
+    <main class="box middle">
+      <input type="text" id="searchString" name="searchString" placeholder="Enter your search..."><br><br>
+	    <input type="submit" value="Search" id="search" onclick="searchFunc()">
+	    <input type="reset" value="Reset" id="reset" onclick="reset()">
+	    <br>
+	    <p>Search Results:</p>
+	    <p id="searchResults"></p>
+      <p>All Cards</p>
+      <ul>
+        <li><a href="page3.html">Revealer of the Ice Barrier</a></li>
+        <li><a href="page4.html">Hexa Spirit of the Ice Barrier</a></li>
+        <li><a href="page5.html">Genex Controller</a></li>
+        <li><a href="page6.html">Aqua Spirit</a></li>
+        <li><a href="page7.html">Trishula, Dragon of the Ice Barrier</a></li>
+        <li><a href="page8.html">Medallion of the Ice Barrier</a></li>
+        <li><a href="page9.html">Freezing Chains of the Ice Barrier</a></li>
+        <li><a href="page10.html">Where Arf Thou?</a></li>
+        <li><a href="page11.html">Heavy Storm Duster</a></li>
+        <li><a href="page12.html">Mind Drain</a></li>
+        <div id="hiddenCard">
+        <li><a href="page13.html">Silent Angler</a></li>
+        </div>
+      </ul>
+      <br><br>
+      <button type="button" onclick="hideCard()">Reset</button><br>
+      <p1>Reset is for teseting purposes.</p1>
+    </main>
+    <footer class="box footer"><p1>©2020 Jacob and Co | Jacob Casina | 555-083-5290</p1>
+    </footer>
+    </div>
+  </body>
+</html>

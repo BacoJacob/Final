@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@3.1.0/dist/umd/index.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="box logo">
+      <div class="diamond centered"></div>
+    </div>
+    <header class="box header">
+    <h1>Blue Box</h1>
+    </header>
+    <nav class="box nav">
+      <br>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">Card List</a></li>
+        <li><a href="page2.html">Add Card</a></li>
+      </ul>
+    </nav>
+    <main class="box middle">
+      <form name="myForm" action="https://webdevbasics.net/scripts/yoga.php" method="post">
+        <label for="Cname">Card Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Name" maxlength="75" required><br>
+        <button type="button">Add Image</button><br><br>
+        Card Type: <br>
+        <input type="radio" id="m" name="Ctype" value="Monster" onchange="checkType()">
+        <label for="m">Monster</label><br>
+        <input type="radio" id="s" name="Ctype" value="Spell" onchange="checkType()">
+        <label for="s">Spell</label><br>  
+        <input type="radio" id="t" name="Ctype" value="Trap" onchange="checkType()">
+        <label for="t">Trap</label><br><br>
+
+        <label for="attribute">Monster Attributes:</label><br>
+        <select id="attributes" name="attributes" required>
+          <option value="Blank"></option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="earth">Earth</option>
+          <option value="wind">Wind</option>
+          <option value="water">Water</option>
+          <option value="fire">Fire</option>
+        </select><br><br>
+
+        <label for="level">Level/Rank:</label><br>
+        <input type="number" id="level" name="level" min="1" max="13" required>
+        <br><br>
+
+        <label for="mtype">Monster Types:</label><br>
+        <select id="mtypes" name="mtypes" required>
+          <option value="Blank"></option>
+          <option value="Aqua">Aqua</option>
+          <option value="Beast">Beast</option>
+          <option value="Beast-Warrior">Beast-Warrior</option>
+          <option value="Cyberse">Cyberse</option>
+          <option value="Dinosaur">Dinosaur</option>
+          <option value="Divine-Beast">Divine-Beast</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Fairy">Fairy</option>
+          <option value="Fiend">Fiend</option>
+          <option value="Fish">Fish</option>
+          <option value="Insect">Insect</option>
+          <option value="Machine">Machine</option>
+          <option value="Plant">Plant</option>
+          <option value="Psychic">Psychic</option>
+          <option value="Pyro">Pyro</option>
+          <option value="Reptile">Reptile</option>
+          <option value="Rock">Rock</option>
+          <option value="SeaSerpent">Sea Serpent</option>
+          <option value="Spellcaster">Spellcaster</option>
+          <option value="Thunder">Thunder</option>
+          <option value="Warrior">Warrior</option>
+          <option value="WingedBeast">Winged Beast</option>
+          <option value="Wyrm">Wyrm</option>
+          <option value="Rock">Zombie</option>
+        </select><br><br>
+
+        <label for="mStype">Monster Secondary Type:</label><br>
+        <select id="mStypes" name="mStypes">
+          <option value="Blank"></option>
+          <option value="spirit">Spirit</option>
+          <option value="toon">Toon</option>
+          <option value="tuner">Tuner</option>
+          <option value="gemini">Gemini</option>
+          <option value="union">Union</option>
+          <option value="flip">Flip</option>
+        </select><br><br>
+
+        <label for="stype">Spell/Trap Type:</label><br>
+        <select id="stypes" name="stypes" required>
+          <option value="Blank"></option>
+          <option value="normal">Normal</option>
+          <option value="quick">Quick-Play</option>
+          <option value="continuous">Continuous</option>
+          <option value="field">Field</option>
+          <option value="equip">Equip</option>
+          <option value="counter">Counter</option>
+        </select><br><br>
+
+        <label for="Atk">Attack Points:</label><br>
+        <input type="number" id="Atk" name="Atk" required>
+        <br><br>
+        <label for="Def">Defense Points:</label><br>
+        <input type="number" id="Def" name="Def" required>
+        <br><br>
+
+        <textarea name="effect" rows="15" cols="40">Effect Text
+        </textarea><br>
+
+        <input type="submit" value="Submit" onclick="showCard()">
+      </form>
+    </main>
+    <footer class="box footer"><p1>©2020 Jacob and Co | Jacob Casina | 555-083-5290</p1>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/minisearch@3.1.0/dist/umd/index.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="currentCarousel(1)">
+    <div class="wrapper">
+    <div class="box logo">
+      <div class="diamond centered"></div>
+    </div>
+    <header class="box header">
+    <h1>Blue Box</h1>
+    </header>
+    <nav class="box nav">
+      <br>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="page1.html">Card List</a></li>
+        <li><a href="page2.html">Add Card</a></li>
+      </ul>
+    </nav>
+    <main class="box middle">
+    
+    <p class="p2">Recently Added Cards</p>
+
+    <!-- carousel container -->
+    <div class="carousel-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="myCarousel fade">
+        <img src="images/Aqua.jpg" style="width:100%">
+        <div class="text">Aqua Spirit</div>
+      </div>
+
+      <div class="myCarousel fade">
+        <img src="images/Thou.jpg" style="width:100%">
+        <div class="text">Where Arf Thou?</div>
+      </div>
+
+      <div class="myCarousel fade">
+        <img src="images/Drain.jpg" style="width:100%">
+        <div class="text">Mind Drain</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusCarousel(-1)">&#10094;</a>
+      <a class="next" onclick="plusCarousel(1)">&#10095;</a>
+        </div>
+        <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentCarousel(1)"></span>
+        <span class="dot" onclick="currentCarousel(2)"></span>
+        <span class="dot" onclick="currentCarousel(3)"></span>
+      </div>
+      <p class="p2">Hello, and welcome to blue box. The purpose of this website is to add and search for cards in my yugioh card collection.</p>
+    </main>
+    <footer class="box footer"><p1>©2020 Jacob and Co | Jacob Casina | 555-083-5290</p1>
+    </footer>
+    </div>
+  </body>
+</html>
